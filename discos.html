@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discografía completa de Canserbero, incluyendo sus álbumes más importantes">
+    <title>Discos de CANSERBERO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Roboto:wght@400;700;900&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Agregar cursor personalizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <header class="transparent-header">
+        <nav class="menu">
+            <div class="logo-box">
+                <img src="img/logo.png" alt="CANSERBERO Logo" class="logo">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quien_es.html">Quien es CANSERBERO</a></li>
+                <li><a href="discos.html" class="active">Discos</a></li>
+                <li><a href="legado.html">Legado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Actualizar a hero-v2 con video -->
+        <section id="hero" class="hero-v2">
+            <div class="video-container">
+                <video id="bg-video" autoplay muted loop poster="img/img17.jpg">
+                    <source src="video/canserbero-albums.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            
+            <!-- Actualizar el hero-v2 para que tenga el mismo estilo que el inicio -->
+            <div class="hero-content">
+                <h1 class="hero-title-v2" data-text="DISCOS">DISCOS</h1>
+                <div class="hero-subtitle">El Legado Musical de<span class="hero-subtitle-highlight">CANSERBERO</span></div>
+                <div class="hero-quote">"La música es el lenguaje universal que trasciende fronteras y conecta almas"</div>
+                
+                <!-- Añadir botones de navegación atractivos -->
+                <div class="hero-nav-buttons">
+                    <a href="index.html" class="hero-nav-button">
+                        <i class="fas fa-home btn-icon"></i>Inicio
+                    </a>
+                    <a href="quien_es.html" class="hero-nav-button">
+                        <i class="fas fa-user-alt btn-icon"></i>Biografía
+                    </a>
+                    <a href="legado.html" class="hero-nav-button">
+                        <i class="fas fa-star btn-icon"></i>Legado
+                    </a>
+                </div>
+                
+                <div class="hero-scroll-indicator">
+                    <div class="scroll-text">Explora su discografía</div>
+                    <div class="scroll-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+            </div>
+            <div class="hero-social">
+                <a href="https://open.spotify.com/intl-es/artist/1wGIhYkKWSq4yACtTkCkSX" class="hero-social-link" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.youtube.com/channel/UC-Gh7ndBnNZvGRjCzlt2Ecw" class="hero-social-link" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/canserberooficial/" class="hero-social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- Agregar la línea de años personalizada para la discografía -->
+            <div class="hero-years">
+                <div class="year">2008</div>
+                <div class="separator"></div>
+                <div class="year">2024</div>
+            </div>
+        </section>
+
+        <section class="discografia-intro">
+            <div class="container">
+                <div class="discografia-contenido">
+                    <div class="discografia-texto">
+                        <h2 class="section-title-v2">El Legado Musical de CANSERBERO</h2>
+                        <p>Canserbero dejó un legado imborrable en la historia del rap latinoamericano. Sus álbumes son considerados obras maestras del género, destacando por su profundidad lírica y su cruda honestidad. Canserbero influyó en innumerables artistas y redefinió lo que significa ser un MC en la escena del rap en español.</p>
+                        <p>Sus mejores álbumes, como "Vida" y "Muerte", son celebrados por su narrativa poética, su crítica social aguda y su exploración de temas existenciales. Estos trabajos no solo solidificaron la posición de Canserbero como uno de los mejores letristas en el rap latinoamericano, sino que también inspiraron a una nueva generación de artistas a abordar temas profundos y personales en su música.</p>
+                    </div>
+                    <div class="discografia-imagen">
+                        <img src="img/img24.jpg" alt="CANSERBERO Legacy" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mantener la sección de galería de álbumes con el diseño actual -->
+        <section class="galeria-albums">
+            <div class="container">
+                <h2 class="section-title-v2">Los Mejores Álbumes de CANSERBERO</h2>
+                <div class="albums-container">
+                    <div class="album">
+                        <div class="album-cover">
+                            <img src="img/vida_canserbero.jpg" alt="Vida" loading="lazy">
+                            <div class="album-info">
+                                <i class="fas fa-calendar-alt"></i> 2010
+                            </div>
+                        </div>
+                        <div class="album-tracks">
+                            <h3>Vida <span class="spotify-streams"><i class="fab fa-spotify"></i> 280M</span></h3>
+                            <ol>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Prólogo</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 5.8M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>C'est la Mort</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 85.3M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Un Día en el Barrio</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 42.7M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Jeremías 17:5</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 68.2M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>De la Vida como una Película</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 37.5M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Llovía</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 52.9M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Vida</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 63.4M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Pensando en Ti</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 41.8M</span>
+                                    </div>
+                                </li>
+                            </ol>
+                            <a href="https://open.spotify.com/album/6FpXDVDHiI3TxcE0Xo9hzK" class="spotify-link" target="_blank">
+                                <i class="fab fa-spotify"></i> Escuchar en Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-cover">
+                            <img src="img/muerte_canserbero.jpg" alt="Muerte" loading="lazy">
+                            <div class="album-info">
+                                <i class="fas fa-calendar-alt"></i> 2012
+                            </div>
+                        </div>
+                        <div class="album-tracks">
+                            <h3>Muerte <span class="spotify-streams"><i class="fab fa-spotify"></i> 320M</span></h3>
+                            <ol>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Mundo de Piedra</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 48.6M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Es Épico</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 112.5M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Maquiavélico</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 87.3M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Y la Felicidad Qué</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 52.8M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Sin Mercy</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 43.7M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Muerte</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 64.9M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Épica</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 56.2M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Instinto</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 39.8M</span>
+                                    </div>
+                                </li>
+                            </ol>
+                            <a href="https://open.spotify.com/album/1TA5sGRlKUJXBN4ZyJuDIX" class="spotify-link" target="_blank">
+                                <i class="fab fa-spotify"></i> Escuchar en Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-cover">
+                            <img src="img/apa_canserbero.jpg" alt="Apa y Can" loading="lazy">
+                            <div class="album-info">
+                                <i class="fas fa-calendar-alt"></i> 2008
+                            </div>
+                        </div>
+                        <div class="album-tracks">
+                            <h3>Apa y Can <span class="spotify-streams"><i class="fab fa-spotify"></i> 95M</span></h3>
+                            <ol>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Introversión</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 18.4M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Visiones</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 24.7M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Únetenos</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 19.3M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Apatía</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 15.8M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Stupid Love Story</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 13.5M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Calma</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 11.2M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Advertencia</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 9.6M</span>
+                                    </div>
+                                </li>
+                            </ol>
+                            <a href="https://open.spotify.com/album/5vUnjhH7fFGdNQQjqe5JRF" class="spotify-link" target="_blank">
+                                <i class="fab fa-spotify"></i> Escuchar en Spotify
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="album">
+                        <div class="album-cover">
+                            <img src="img/indigo_canserbero.jpg" alt="Índigo" loading="lazy">
+                            <div class="album-info">
+                                <i class="fas fa-calendar-alt"></i> 2008
+                            </div>
+                        </div>
+                        <div class="album-tracks">
+                            <h3>Índigo <span class="spotify-streams"><i class="fab fa-spotify"></i> 82M</span></h3>
+                            <ol>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Índigo</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 19.8M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Interludio</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 9.5M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Quién Eres</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 18.3M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Inspiración Divina</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 15.7M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Perdiendo la Fe</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 17.2M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Sigo Siendo</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 13.8M</span>
+                                    </div>
+                                </li>
+                            </ol>
+                            <a href="https://open.spotify.com/album/6Zb9yrBjQIGMkVHgC4fjUD" class="spotify-link" target="_blank">
+                                <i class="fab fa-spotify"></i> Escuchar en Spotify
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="album">
+                        <div class="album-cover">
+                            <img src="img/guia_canserbero.jpg" alt="Guía Para la Acción" loading="lazy">
+                            <div class="album-info">
+                                <i class="fas fa-calendar-alt"></i> 2009
+                            </div>
+                        </div>
+                        <div class="album-tracks">
+                            <h3>Guía Para la Acción <span class="spotify-streams"><i class="fab fa-spotify"></i> 88M</span></h3>
+                            <ol>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Intro</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 8.2M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Pensando en Ti</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 25.6M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Ser Vero</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 18.7M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Ley del Hielo</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 15.9M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Vida</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 19.4M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="track-info">
+                                        <span>Guía Para la Acción</span>
+                                        <span class="track-streams"><i class="fab fa-spotify"></i> 14.2M</span>
+                                    </div>
+                                </li>
+                            </ol>
+                            <a href="https://open.spotify.com/album/0VB2rXYuXHXW5OcS9JQQnp" class="spotify-link" target="_blank">
+                                <i class="fab fa-spotify"></i> Escuchar en Spotify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección: Top Tracks - Hall of Fame con diseño similar a álbumes -->
+        <section class="top-tracks-section">
+            <div class="container">
+                <div class="top-tracks-header">
+                    <h2 class="section-title-v2">TOP TRACKS - HALL OF FAME</h2>
+                    <p class="top-tracks-subtitle">Las canciones más emblemáticas e influyentes de Canserbero, que han dejado una huella imborrable en el rap latinoamericano y continúan inspirando a nuevas generaciones.</p>
+                </div>
+                
+                <div class="top-tracks-container">
+                    <div class="top-tracks-grid">
+                        <!-- Track 1: Es Épico -->
+                        <div class="top-track-card" data-track="es-epico">
+                            <div class="top-track-cover">
+                                <img src="img/es-epico.jpg" alt="Es Épico - Canserbero" loading="lazy">
+                                <div class="track-rank-badge">01</div>
+                                <div class="track-play-overlay">
+                                    <button class="track-play-btn" aria-label="Reproducir">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="top-track-info">
+                                <h3 class="top-track-title">Es Épico <span class="track-icon"><i class="fas fa-crown"></i></span></h3>
+                                <div class="top-track-album">
+                                    <i class="fas fa-compact-disc"></i> Álbum: Muerte (2012)
+                                </div>
+                                <div class="top-track-stats">
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-headphones-alt"></i>
+                                        <span>178.5M</span>
+                                    </div>
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>3.2M</span>
+                                    </div>
+                                </div>
+                                <div class="top-track-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"Épico es mantenerte de pie cuando te quieren de rodillas"</p>
+                                </div>
+                                <div class="top-track-platforms">
+                                    <a href="https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV" class="platform-icon spotify" target="_blank" aria-label="Escuchar en Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=zNrz0ulFpK8" class="platform-icon youtube" target="_blank" aria-label="Escuchar en YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://music.apple.com/us/album/es-%C3%A9pico/1452970195?i=1452970197" class="platform-icon apple" target="_blank" aria-label="Escuchar en Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Track 2: C'est La Mort -->
+                        <div class="top-track-card" data-track="cest-la-mort">
+                            <div class="top-track-cover">
+                                <img src="img/c'est -la-mort.jpg" alt="C'est La Mort - Canserbero" loading="lazy">
+                                <div class="track-rank-badge">02</div>
+                                <div class="track-play-overlay">
+                                    <button class="track-play-btn" aria-label="Reproducir">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="top-track-info">
+                                <h3 class="top-track-title">C'est La Mort <span class="track-icon"><i class="fas fa-fire"></i></span></h3>
+                                <div class="top-track-album">
+                                    <i class="fas fa-compact-disc"></i> Álbum: Vida (2010)
+                                </div>
+                                <div class="top-track-stats">
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-headphones-alt"></i>
+                                        <span>142.7M</span>
+                                    </div>
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>2.5M</span>
+                                    </div>
+                                </div>
+                                <div class="top-track-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"Es muy fácil criticar y juzgar sin antes caminar con los zapatos del otro"</p>
+                                </div>
+                                <div class="top-track-platforms">
+                                    <a href="https://open.spotify.com/track/0KdMPFCZpfRdZPpEgGGAk3" class="platform-icon spotify" target="_blank" aria-label="Escuchar en Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=wM9PN6IJ6Ho" class="platform-icon youtube" target="_blank" aria-label="Escuchar en YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://music.apple.com/us/album/cest-la-mort/1452970195?i=1452970196" class="platform-icon apple" target="_blank" aria-label="Escuchar en Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Track 3: Maquiavélico -->
+                        <div class="top-track-card" data-track="maquiavelico">
+                            <div class="top-track-cover">
+                                <img src="img/maquiavelico.jpg" alt="Maquiavélico - Canserbero" loading="lazy">
+                                <div class="track-rank-badge">03</div>
+                                <div class="track-play-overlay">
+                                    <button class="track-play-btn" aria-label="Reproducir">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="top-track-info">
+                                <h3 class="top-track-title">Maquiavélico <span class="track-icon"><i class="fas fa-bolt"></i></span></h3>
+                                <div class="top-track-album">
+                                    <i class="fas fa-compact-disc"></i> Álbum: Muerte (2012)
+                                </div>
+                                <div class="top-track-stats">
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-headphones-alt"></i>
+                                        <span>124.8M</span>
+                                    </div>
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>2.1M</span>
+                                    </div>
+                                </div>
+                                <div class="top-track-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"Yo solo soy un simple mortal, con defectos y errores como cualquiera"</p>
+                                </div>
+                                <div class="top-track-platforms">
+                                    <a href="https://open.spotify.com/track/0Ym3Q7jALCYjmYVgFRmYlJ" class="platform-icon spotify" target="_blank" aria-label="Escuchar en Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=OLnfQVXYpHs" class="platform-icon youtube" target="_blank" aria-label="Escuchar en YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://music.apple.com/us/album/maquiav%C3%A9lico/1452970195?i=1452970200" class="platform-icon apple" target="_blank" aria-label="Escuchar en Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Track 4: Jeremías 17:5 -->
+                        <div class="top-track-card" data-track="jeremias">
+                            <div class="top-track-cover">
+                                <img src="img/jeremias.jpg" alt="Jeremías 17:5 - Canserbero" loading="lazy">
+                                <div class="track-rank-badge">04</div>
+                                <div class="track-play-overlay">
+                                    <button class="track-play-btn" aria-label="Reproducir">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="top-track-info">
+                                <h3 class="top-track-title">Jeremías 17:5 <span class="track-icon"><i class="fas fa-book"></i></span></h3>
+                                <div class="top-track-album">
+                                    <i class="fas fa-compact-disc"></i> Álbum: Vida (2010)
+                                </div>
+                                <div class="top-track-stats">
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-headphones-alt"></i>
+                                        <span>98.3M</span>
+                                    </div>
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>1.8M</span>
+                                    </div>
+                                </div>
+                                <div class="top-track-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"La vida es un ciclo y el mundo es una bola que gira en un círculo vicioso"</p>
+                                </div>
+                                <div class="top-track-platforms">
+                                    <a href="https://open.spotify.com/track/5Aq5Tz0yoKgOl9zcqGZgzW" class="platform-icon spotify" target="_blank" aria-label="Escuchar en Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=YWy3_OiA9co" class="platform-icon youtube" target="_blank" aria-label="Escuchar en YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://music.apple.com/us/album/jerem%C3%ADas-17-5/1452970195?i=1452970199" class="platform-icon apple" target="_blank" aria-label="Escuchar en Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Track 5: Vida -->
+                        <div class="top-track-card" data-track="vida">
+                            <div class="top-track-cover">
+                                <img src="img/vida.jpg" alt="Vida - Canserbero" loading="lazy">
+                                <div class="track-rank-badge">05</div>
+                                <div class="track-play-overlay">
+                                    <button class="track-play-btn" aria-label="Reproducir">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="top-track-info">
+                                <h3 class="top-track-title">Vida <span class="track-icon"><i class="fas fa-heartbeat"></i></span></h3>
+                                <div class="top-track-album">
+                                    <i class="fas fa-compact-disc"></i> Álbum: Vida (2010)
+                                </div>
+                                <div class="top-track-stats">
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-headphones-alt"></i>
+                                        <span>89.6M</span>
+                                    </div>
+                                    <div class="top-track-stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>1.6M</span>
+                                    </div>
+                                </div>
+                                <div class="top-track-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"La vida es un préstamo y la muerte un cobrador"</p>
+                                </div>
+                                <div class="top-track-platforms">
+                                    <a href="https://open.spotify.com/track/5Aq5Tz0yoKgOl9zcqGZgzW" class="platform-icon spotify" target="_blank" aria-label="Escuchar en Spotify">
+                                        <i class="fab fa-spotify"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=AGust-6RpFU" class="platform-icon youtube" target="_blank" aria-label="Escuchar en YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://music.apple.com/us/album/vida/1452970195?i=1452970202" class="platform-icon apple" target="_blank" aria-label="Escuchar en Apple Music">
+                                        <i class="fab fa-apple"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="top-tracks-footer">
+                    <a href="https://open.spotify.com/artist/1wGIhYkKWSq4yACtTkCkSX" class="view-all-tracks" target="_blank">
+                        Ver todas las canciones <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agregar sección de frases como en la página de inicio -->
+        <section class="frases-inmersivas">
+            <div class="container">
+                <h2 class="section-title-v2">Frases de sus Canciones</h2>
+                <div class="frases-carousel">
+                    <div class="frase-slide active">
+                        <div class="frase-content">
+                            <div class="frase-quote">"La vida es un préstamo y la muerte un cobrador"</div>
+                            <div class="frase-source">Vida</div>
+                        </div>
+                    </div>
+                    <div class="frase-slide">
+                        <div class="frase-content">
+                            <div class="frase-quote">"Épico es mantenerte de pie cuando te quieren de rodillas"</div>
+                            <div class="frase-source">Es Épico</div>
+                        </div>
+                    </div>
+                    <div class="frase-slide">
+                        <div class="frase-content">
+                            <div class="frase-quote">"Cuando el dinero habla, la verdad calla"</div>
+                            <div class="frase-source">Vida</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frases-navigation">
+                    <div class="frases-dots">
+                        <span class="frase-dot active" data-index="0"></span>
+                        <span class="frase-dot" data-index="1"></span>
+                        <span class="frase-dot" data-index="2"></span>
+                    </div>
+                    <div class="frases-arrows">
+                        <button class="frase-arrow prev" aria-label="Frase anterior"><i class="fas fa-arrow-left"></i></button>
+                        <button class="frase-arrow next" aria-label="Frase siguiente"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agregar sección de call to action -->
+        <section class="call-to-action">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Descubre más sobre su legado</h2>
+                    <p>Explora el impacto cultural y artístico que Canserbero dejó en el rap latinoamericano</p>
+                    <div class="cta-buttons">
+                        <a href="legado.html" class="cta-button primary">Explorar su legado</a>
+                        <a href="quien_es.html" class="cta-button secondary">Conocer su historia</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Actualizar al footer moderno -->
+    <footer class="footer-v2">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Canserbero Logo" class="logo">
+                    <p class="footer-tagline">La leyenda continúa</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navegación</h3>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="quien_es.html">Biografía</a></li>
+                            <li><a href="discos.html">Discografía</a></li>
+                            <li><a href="legado.html">Legado</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Redes Sociales</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/tyronejose.gonzalezoramas.1" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/elcanserbero?lang=es" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/canserberooficial/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://open.spotify.com/artist/1wGIhYkKWSq4yACtTkCkSX" class="social-icon" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="footer-copyright">Creado por JP / 2025</p>
+                <p class="footer-tribute">En memoria de Tyrone José González Orama (1988-2015)</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Script específico para la sección de Top Tracks
+        document.addEventListener('DOMContentLoaded', function() {
+            // Funcionalidad para reproducir/pausar tracks
+            const playButtons = document.querySelectorAll('.track-play-btn');
+            playButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const track = this.closest('.top-track-card');
+                    const isPlaying = track.classList.contains('playing');
+                    
+                    // Pausar todos los tracks primero
+                    document.querySelectorAll('.top-track-card').forEach(t => {
+                        t.classList.remove('playing');
+                        const playIcon = t.querySelector('.track-play-btn i');
+                        if (playIcon) {
+                            playIcon.classList.remove('fa-pause');
+                            playIcon.classList.add('fa-play');
+                        }
+                    });
+                    
+                    // Si no estaba reproduciendo, iniciar reproducción
+                    if (!isPlaying) {
+                        track.classList.add('playing');
+                        const icon = this.querySelector('i');
+                        icon.classList.remove('fa-play');
+                        icon.classList.add('fa-pause');
+                        
+                        // Simular reproducción de audio
+                        console.log(`Reproduciendo: ${track.getAttribute('data-track')}`);
+                    }
+                });
+            });
+            
+            // Animación de entrada para los tracks
+            const tracks = document.querySelectorAll('.top-track-card');
+            function checkScroll() {
+                tracks.forEach((track, index) => {
+                    const trackTop = track.getBoundingClientRect().top;
+                    const triggerBottom = window.innerHeight * 0.8;
+                    
+                    if (trackTop < triggerBottom) {
+                        setTimeout(() => {
+                            track.classList.add('show');
+                        }, index * 200); // Retraso escalonado para cada track
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Verificar al cargar la página
+            
+            // Efecto hover para las tarjetas
+            tracks.forEach(track => {
+                track.addEventListener('mouseenter', function() {
+                    this.classList.add('hover');
+                });
+                
+                track.addEventListener('mouseleave', function() {
+                    this.classList.remove('hover');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
